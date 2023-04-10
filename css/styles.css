@@ -1,0 +1,373 @@
+:root {
+  --primary-color: #434455;
+  --secondary-color: #2e2f42;
+  --design-color: #4d5ae5;
+  --action-color: #404bbf;
+  --white-color: #ffffff;
+  --light-background-color: #f4f4fd;
+  --light-text-color: #f4f4fd;
+  --frame-color: #e7e9fc;
+  --primary-text: 'Roboto', sans-serif;
+  --secondary-text: 'Raleway', sans-serif;
+  --set-gap: 24px;
+}
+/* Body */
+body {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-family: var(--primary-text);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: var(--white-color);
+}
+/* Reset start */
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Reset end */
+
+/* Container */
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Section */
+.section {
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 120px;
+  padding-left: 0;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-section {
+  border-bottom: 1px solid var(--frame-color);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo {
+  height: 24px;
+  margin-right: 76px;
+
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1.17;
+  font-family: var(--secondary-text);
+  color: var(--design-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.logo-header {
+  color: var(--secondary-color);
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--action-color);
+}
+
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: var(--primary-color);
+  font-style: normal;
+}
+
+/* Hero section in studio */
+.hero-section {
+  background-color: var(--secondary-color);
+  padding: 188px 0;
+}
+
+.hero-container {
+  text-align: center;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  max-width: 496px;
+  height: 120px;
+}
+
+.hero-btn {
+  display: block;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  min-width: 169px;
+  min-height: 56px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  background-color: var(--design-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  border: transparent;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white-color);
+  background-color: var(--action-color);
+}
+
+/* All sections  */
+
+.title {
+  min-width: 323px;
+  margin-bottom: 72px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subtitle {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+}
+
+.text {
+  color: var(--primary-color);
+}
+
+/* Second section */
+
+.second-section {
+  padding-top: 0;
+}
+.list-possibilities {
+  display: flex;
+  gap: var(--set-gap);
+}
+
+.item {
+  flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
+}
+
+/* Third section */
+.pictures-list {
+  display: flex;
+  padding: 0px;
+  gap: var(--set-gap);
+  margin-top: 72px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1128px;
+}
+
+.picture {
+  flex-basis: calc((100% - 2 * var(--set-gap)) / 3);
+}
+
+/*Team section  */
+.team-section {
+  background-color: var(--light-background-color);
+}
+
+.list-card {
+  display: flex;
+  justify-content: center;
+  gap: var(--set-gap);
+  max-width: 1128px;
+}
+
+.card {
+  height: 380px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
+}
+
+.user {
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  text-align: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* Portfolio */
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 586px;
+  margin-bottom: 72px;
+  gap: 24px;
+}
+
+.btn {
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+
+  color: var(--design-color);
+  background-color: var(--light-background-color);
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--frame-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--white-color);
+  background-color: var(--action-color);
+  border: 1px solid transparent;
+}
+
+.list-img-card {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: var(--set-gap);
+  max-width: 1128px;
+}
+
+.img-card {
+  flex-basis: calc((100% - 2 * var(--set-gap)) / 3);
+}
+
+.desc {
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--frame-color);
+  border-top: none;
+  background-color: var(--white-color);
+}
+
+/* Footer */
+.footer-section {
+  background-color: var(--secondary-color);
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 100px;
+  padding-left: 0;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-footer {
+  color: var(--light-text-color);
+}
+
+.footer-text {
+  width: 264px;
+  color: var(--light-text-color);
+}

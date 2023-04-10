@@ -76,6 +76,9 @@ button {
 
 .header-section {
   border-bottom: 1px solid var(--frame-color);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation {
@@ -134,7 +137,18 @@ button {
 /* Hero section in studio */
 .hero-section {
   background-color: var(--secondary-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('/images/studio/people-office.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-container {
@@ -260,6 +274,9 @@ button {
 /*Team section  */
 .team-section {
   background-color: var(--light-background-color);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list-card {
@@ -275,6 +292,10 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   flex-basis: calc((100% - 3 * var(--set-gap)) / 4);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .user {
@@ -283,10 +304,6 @@ button {
   padding-bottom: 32px;
   padding-left: 16px;
   text-align: center;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 
 /* Portfolio */
@@ -325,6 +342,8 @@ button {
   color: var(--white-color);
   background-color: var(--action-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-img-card {
@@ -337,6 +356,13 @@ button {
 
 .img-card {
   flex-basis: calc((100% - 2 * var(--set-gap)) / 3);
+}
+
+.img-card:hover,
+.img-card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
 }
 
 .desc {
@@ -356,6 +382,9 @@ button {
   padding-right: 0;
   padding-bottom: 100px;
   padding-left: 0;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-link {

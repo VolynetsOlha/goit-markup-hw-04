@@ -13,6 +13,7 @@
   --hero-background-color: rgba(46, 47, 66, 0.7);
   --light-slate-border-color: #8e8f99;
   --action-green-color: #31d0aa;
+  --customers-icon-color: #afb1b8;
 }
 
 /* Body */
@@ -84,6 +85,8 @@ button {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .navigation {
@@ -217,11 +220,11 @@ button {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .visually-hidden {
@@ -324,9 +327,9 @@ button {
 
 .user {
   padding-top: 32px;
-  padding-right: 16px;
+  padding-right: 0;
   padding-bottom: 32px;
-  padding-left: 16px;
+  padding-left: 0;
   text-align: center;
 }
 
@@ -334,6 +337,7 @@ button {
   display: flex;
   gap: 24px;
   margin-top: 8px;
+  justify-content: center;
 }
 
 .social-link {
@@ -354,7 +358,7 @@ button {
 .social-icon {
   width: 16px;
   height: 16px;
-  fill: var(--light-background-color);
+  fill: var(--light-text-color);
 }
 
 /* Customers section */
@@ -373,17 +377,19 @@ button {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  color: var(--customers-icon-color);
 }
 
 .custom-link:hover,
 .custom-link:focus {
   border-color: var(--action-color);
+  color: var(--action-color);
 }
 
 .custom-logo {
   width: 104px;
   height: 54px;
-  fill: var(--light-slate-border-color);
+  fill: currentColor;
 }
 
 .custom-logo:hover,
@@ -443,8 +449,12 @@ button {
   flex-basis: calc((100% - 2 * var(--set-gap)) / 3);
 }
 
-.img-card:hover,
-.img-card:focus {
+.img-link {
+  display: block;
+}
+
+.img-link:hover,
+.img-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   cursor: pointer;
@@ -523,4 +533,5 @@ button {
 .social-media-icon {
   width: 24px;
   height: 24px;
+  fill: var(--light-text-color);
 }
